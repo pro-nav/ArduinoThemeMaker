@@ -1,0 +1,14 @@
+{
+  "name": "arduino_theme_maker",
+  "version": "1.0.0",
+  "description": "Theme Maker for Arduino IDE",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "pro_nav",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^9.1.2"
+  }
+}
