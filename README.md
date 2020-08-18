@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>Arduino Theme Maker</h1>
-  <h3>Theme creator for Arduino IDE</h3>
+  #Arduino Theme Maker
+  ##Theme creator for Arduino IDE
 </div>
 
 
@@ -13,7 +13,7 @@
 </div>
 
 <br><hr><br>
-<h4>Run</h4>
-<p>Clone this repository on your computer.</p>
-<p>`npm install` to install dependancies.</p>
-<p>`npm start` to start the program</p>
+##Run
+Clone this repository on your computer.
+`npm install` to install dependancies.
+`npm start` to start the program
