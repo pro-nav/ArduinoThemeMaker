@@ -12,7 +12,7 @@
 <img src="https://forthebadge.com/images/badges/for-you.svg" />
 </div>
 
-<br><hr><br>
+<br><hr>
 
 This is an [electron](https://electronjs.org/) application which lets you theme your [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
