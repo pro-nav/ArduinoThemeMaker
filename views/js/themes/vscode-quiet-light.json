@@ -1,0 +1,88 @@
+{
+    "status":{
+        "notice":{
+            "fgcolor":"#002325",
+            "bgcolor":"#D6CFE2"
+        },
+        "error":{
+            "fgcolor" : "#FFFFFF",
+            "bgcolor" : "#E34C00"
+        },
+        "edit":{
+            "fgcolor" : "#000000",
+            "bgcolor" : "#F1B500"
+        },
+        "font":"SansSerif,plain,12"
+    },
+
+    "header":{
+        "bgcolor": "#C4B7D7",
+        "fgcolor": "#d4cae3",
+        "text":{
+            "selected.color": "#705697",
+            "unselected.color" : "#705697",
+            "font" : "SansSerif,plain,12"
+        }
+    },
+
+    "console" :{
+        "font":"Monospaced,plain,11",
+        "font.macosx":"Monaco,plain,10",
+        "color":"#F5F5F5",
+        "output.color":"#535353",
+        "error.color":"#e34c00"
+    },
+
+    "buttons":{
+        "bgcolor":"#705697",
+        "fgcolor": "#D6CFE2",
+        "status":{
+            "font":"SansSerif,plain,12",
+            "color":"#ffffff"
+        }
+    },
+
+    "plotting":{
+        "bgcolor": "#ffffff",
+        "color":"#ffffff",
+        "gridcolor":"#f0f0f0",
+        "boundscolor" : "#000000",
+        "graphcolor":{
+            "size":8,
+            "00":"#0000FF",
+            "01":"#FF0000",
+            "02":"#009900",
+            "03":"#FF9900",
+            "04":"#CC00CC",
+            "05":"#666666",
+            "06":"#00CCFF",
+            "07":"#000000"
+        }
+    },
+
+    "linestatus":{
+        "color":"#ffffff",
+        "bgcolor":"#705697"
+    },
+
+    "editor":{
+        "fgcolor":"#000000",
+        "bgcolor":"#F5F5F5",
+        "linehighlight.color":"#E4F6D4",
+        "linehighlight":true,
+        "caret.color": "#333300",
+        "selection.color":"#C9D0D9",
+        "invalid.style": "#7e7e7e,bold",
+        "eolmarkers": false,
+        "eolmarkers.color":"#999999",
+        "brackethighlight": true,
+        "brackethighlight.color": "#B9B9B9"
+    },
+
+    "appInfo":{
+        "name": "Quiet Light",
+        "desc": "Quiet Light from Visual Studio Code",
+        "author": "pro-nav",
+        "light": true
+    }
+}

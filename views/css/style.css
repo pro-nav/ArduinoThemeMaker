@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    min-width: 1024px;
+    min-height: 720px;
+    padding: 5%;
+    padding-right: 0;
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 63% 33%;
+    grid-template-rows: 100%;
+    gap: 5%;
+    background: linear-gradient(45deg, #D32F64,#A42A71);
+    overflow-x: hidden;
+}
+
+.editor{
+    background-color: #c9c5c5;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    overflow-y: auto;
+
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.editor:after, .editor:before
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.editor:after
+{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+
+.editor h1{
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+}
+
+.editor h1 button{
+    float: right;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.editor h1 span{
+    float: right;
+    width: auto;
+    height: 35px;
+    margin-left: 5px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    -webkit-app-region: drag;
+    z-index: 1;
+}
+
+header button{
+    width: 15px;
+    height: 15px;
+    background-color: #F48024;
+    position: relative;
+    top: 3px;
+    float: right;
+    right: 3px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    z-index: 3;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+    border-color: #dedede;
+}
+
+.editor>#theme-list{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.editor>#theme-list>.list-item{
+    margin: 20px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+    padding: 15px;
+    overflow: hidden;
+    transition-duration: .2s;
+
+}
+
+.editor>#theme-list>.list-item button{
+    float: right;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.editor>#theme-list>.list-item span{
+    float: left;
+    width: auto;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.editor>#theme-list>.list-item.active{
+    height: 100px;
+}
+.editor>#theme-list>.list-item.active i{
+    transform: rotate(90deg);
+}
+
+.editor>#theme-list>.list-item span.desc{
+    float: left;
+    width: auto;
+    max-width: 80%;
+    height: 40px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.editor>#theme-list>.list-item span.author{
+    float: right;
+    width: auto;
+    height: 40px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}

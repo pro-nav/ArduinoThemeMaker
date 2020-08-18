@@ -1,0 +1,169 @@
+:root{
+    --status-notice-fgcolor : #002325;
+    --status-notice-bgcolor : #17A1A5;
+    --status-error-fgcolor : #FFFFFF;
+    --status-error-bgcolor : #E34C00;
+    --status-edit-fgcolor : #000000;
+    --status-edit-bgcolor : #F1B500;
+    --header-bgcolor : #17A1A5;
+    --header-fgcolor : #4DB7BB;
+    --header-text-selected-color : #005B5B;
+    --header-text-unselected-color : #007e82;
+    --console-color : #000000;
+    --console-output-color : #eeeeee;
+    --console-error-color : #e34c00;
+    --buttons-bgcolor : #006468;
+    --buttons-fgcolor: #17A1A5;
+    --buttons-status-color : #ffffff;
+    --linestatus-color : #ffffff;
+    --linestatus-bgcolor : #006468;
+    --editor-fgcolor : #000000;
+    --editor-bgcolor : #ffffff;
+    --editor-linehighlight-color : #e2e2e2;
+    --editor-caret-color : #333300;
+    --editor-selection-color : #ffcc00;
+    --editor-eolmarkers-color : #999999;
+    --editor-brackethighlight-color : #006699;
+}
+
+.appTitle, .appMenu, .appBtnBar, .appTabs, .appEditor, .appConStatus, .appConsole, .appLinum{
+    padding-left: 3px;
+    border: none;
+    font-size: 12px;
+    border: none;
+    border-left: 1px solid black;
+    min-height:20px;
+    background-color: white;
+}
+
+.appTitle{
+    border-top: 1px solid black;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.appMenu{
+    height: 15px;
+}
+
+.appBtnBar{
+    height: 33px;
+    background-color: var(--buttons-bgcolor);
+    display: flex;
+    align-items: center;
+}
+
+.appBtn{
+    margin-right: 7px;
+    width: 23px;
+    height: 23px;
+    background-color: var(--buttons-fgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--buttons-bgcolor);
+}
+
+.appBtn.verify, .appBtn.upload{
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.appTabs{
+    height: 33px;
+    background-color: var(--header-bgcolor);
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.appTabs .appTab{
+    border-radius: 3px 3px 0 0;
+    background-color: var(--header-fgcolor);
+    position: relative;
+    height: 75%;
+    font-size: 14px;
+    color: var(--header-text-unselected-color);
+    padding: 0 10px;
+    margin-right: 2px;
+}
+
+.appTabs .appTab.aactive{
+    color: var(--header-text-selected-color);
+    background-color: var(--editor-bgcolor);
+}
+
+.appEditor{
+    height: calc(50vh);
+    background-color: var(--editor-bgcolor);
+    line-height: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 3px;
+}
+
+.appEditor pre{
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.appConStatus{
+    height: 33px;
+    background-color: var(--status-notice-bgcolor);
+}
+
+.appConsole{
+    height: calc(10vh);
+    background-color: var(--console-color);
+    line-height: 20px;
+    overflow: hidden;
+    color: var(--console-output-color);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 3px;
+}
+
+.appConsole span.err{
+    font-family: monospace;
+    color: var(--console-error-color)
+}
+
+.appConsole pre{
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.appLinum{
+    height: 20px;
+    background-color: var(--linestatus-bgcolor);
+    border-bottom: 1px solid black;
+    font-size: 10px;
+    color: var(--linestatus-color);
+}
+
+.ide-view{
+    background: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.ppp{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 5%;
+    max-height: 100%;
+}
+
+.ardLogo{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #0CA1A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+}

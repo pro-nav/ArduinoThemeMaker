@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Theme Editor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <section class="editor">
+        <h1>Theme Editor
+            <button class="apply"><i class="fas fa-external-link-alt"></i></button>
+            <button class="create" disabled><i class="fas fa-edit"></i></button>
+            <span id="hint"></span>
+        </h1>
+        <div id="theme-list">
+
+            
+    </section>
+    <section class="ide-view">
+        <div class="ppp">
+            <div class="appTitle">
+                <div class="ardLogo"><i class="fas fa-infinity"></i></div>&nbsp;&nbsp;Hello Server | Arduino 1.8.13
+            </div>
+            <div class="appMenu">File&nbsp;&nbsp;Edit&nbsp;&nbsp;Sketch&nbsp;&nbsp;Tools&nbsp;&nbsp;Help</div>
+            <div class="appBtnBar">
+                <div class="appBtn verify"><i class="fas fa-check"></i></div>
+                <div class="appBtn upload"><i class="fas fa-arrow-right"></i></div>
+                <div class="appBtn new"><i class="fas fa-file-code"></i></div>
+                <div class="appBtn open"><i class="fas fa-arrow-up"></i></div>
+                <div class="appBtn save"><i class="fas fa-arrow-down"></i></div>
+            </div>
+            <div class="appTabs">
+                <div class="appTab aactive">sadas</div>
+                <div class="appTab">sadsadsad</div>
+                <div class="appTab">sadsadsad</div>
+            </div>
+            <div class="appEditor">
+                <pre>
+#include &lt;ESP8266WiFi.h&gt;
+#include &lt;WiFiClient.h&gt;
+#include &lt;ESP8266WebServer.h&gt;
+#include &lt;ESP8266mDNS.h&gt;
+
+#ifndef STASSID
+#define STASSID "your-ssid"
+#define STAPSK  "your-password"
+#endif
+
+const char* ssid = STASSID;
+const char* password = STAPSK;
+
+ESP8266WebServer server(80);
+
+const int led = 13;
+
+void handleRoot() {
+  digitalWrite(led, 1);
+  server.send(200, "text/plain", "hello from esp8266!");
+  digitalWrite(led, 0);
+                </pre>
+            </div>
+            <div class="appConStatus"></div>
+            <div class="appConsole">
+                <pre><span class="err">Error downloading http://arduino.esp8266.com/stable/package_esp8266com_index.json
+Error downloading https://downloads.arduino.cc/packages/package_index.json</span>
+Done Uploading
+            </pre>
+            </div>
+            <div class="appLinum">5</div>
+        </div>
+    </section>
+    <header>
+        <button id="closeBtn"></button>
+    </header>
+
+    <script>
+        require('./js/draw.js');
+    </script>
+</body>
+
+</html>

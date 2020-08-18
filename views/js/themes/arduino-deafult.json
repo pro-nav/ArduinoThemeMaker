@@ -1,0 +1,88 @@
+{
+    "status":{
+        "notice":{
+            "fgcolor":"#002325",
+            "bgcolor":"#17A1A5"
+        },
+        "error":{
+            "fgcolor" : "#FFFFFF",
+            "bgcolor" : "#E34C00"
+        },
+        "edit":{
+            "fgcolor" : "#000000",
+            "bgcolor" : "#F1B500"
+        },
+        "font":"SansSerif,plain,12"
+    },
+
+    "header":{
+        "bgcolor": "#17A1A5",
+        "fgcolor": "#4DB7BB",
+        "text":{
+            "selected.color": "#005B5B",
+            "unselected.color" : "#007e82",
+            "font" : "SansSerif,plain,12"
+        }
+    },
+
+    "console" :{
+        "font":"Monospaced,plain,11",
+        "font.macosx":"Monaco,plain,10",
+        "color":"#000000",
+        "output.color":"#eeeeee",
+        "error.color":"#e34c00"
+    },
+
+    "buttons":{
+        "bgcolor":"#006468",
+        "fgcolor": "#17A1A5",
+        "status":{
+            "font":"SansSerif,plain,12",
+            "color":"#ffffff"
+        }
+    },
+
+    "plotting":{
+        "bgcolor": "#ffffff",
+        "color":"#ffffff",
+        "gridcolor":"#f0f0f0",
+        "boundscolor" : "#000000",
+        "graphcolor":{
+            "size":8,
+            "00":"#0000FF",
+            "01":"#FF0000",
+            "02":"#009900",
+            "03":"#FF9900",
+            "04":"#CC00CC",
+            "05":"#666666",
+            "06":"#00CCFF",
+            "07":"#000000"
+        }
+    },
+
+    "linestatus":{
+        "color":"#ffffff",
+        "bgcolor":"#006468"
+    },
+
+    "editor":{
+        "fgcolor":"#000000",
+        "bgcolor":"#ffffff",
+        "linehighlight.color":"#e2e2e2",
+        "linehighlight":false,
+        "caret.color": "#333300",
+        "selection.color":"#ffcc00",
+        "invalid.style": "#7e7e7e,bold",
+        "eolmarkers": false,
+        "eolmarkers.color":"#999999",
+        "brackethighlight": true,
+        "brackethighlight.color": "#006699"
+    },
+
+    "appInfo":{
+        "name": "Arduino Deafult",
+        "desc": "Deafult Arduino IDE theme",
+        "author": "Arduino",
+        "light": true
+    }
+}

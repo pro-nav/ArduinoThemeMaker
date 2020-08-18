@@ -1,0 +1,88 @@
+{
+    "status":{
+        "notice":{
+            "fgcolor":"#002325",
+            "bgcolor":"#d22f64"
+        },
+        "error":{
+            "fgcolor" : "#FFFFFF",
+            "bgcolor" : "#E34C00"
+        },
+        "edit":{
+            "fgcolor" : "#000000",
+            "bgcolor" : "#F1B500"
+        },
+        "font":"SansSerif,plain,12"
+    },
+
+    "header":{
+        "bgcolor": "#d22f64",
+        "fgcolor": "#c54e75",
+        "text":{
+            "selected.color": "#ad2b6f",
+            "unselected.color" : "#a52a70",
+            "font" : "SansSerif,plain,12"
+        }
+    },
+
+    "console" :{
+        "font":"Monospaced,plain,11",
+        "font.macosx":"Monaco,plain,10",
+        "color":"#000000",
+        "output.color":"#eeeeee",
+        "error.color":"#e34c00"
+    },
+
+    "buttons":{
+        "bgcolor":"#801854",
+        "fgcolor": "#d22f64",
+        "status":{
+            "font":"SansSerif,plain,12",
+            "color":"#ffffff"
+        }
+    },
+
+    "plotting":{
+        "bgcolor": "#ffffff",
+        "color":"#ffffff",
+        "gridcolor":"#f0f0f0",
+        "boundscolor" : "#000000",
+        "graphcolor":{
+            "size":8,
+            "00":"#0000FF",
+            "01":"#FF0000",
+            "02":"#009900",
+            "03":"#FF9900",
+            "04":"#CC00CC",
+            "05":"#666666",
+            "06":"#00CCFF",
+            "07":"#000000"
+        }
+    },
+
+    "linestatus":{
+        "color":"#ffffff",
+        "bgcolor":"#801854"
+    },
+
+    "editor":{
+        "fgcolor":"#000000",
+        "bgcolor":"#ffffff",
+        "linehighlight.color":"#e2e2e2",
+        "linehighlight":false,
+        "caret.color": "#333300",
+        "selection.color":"#ffcc00",
+        "invalid.style": "#7e7e7e,bold",
+        "eolmarkers": false,
+        "eolmarkers.color":"#999999",
+        "brackethighlight": true,
+        "brackethighlight.color": "#6a1948"
+    },
+
+    "appInfo":{
+        "name": "Arduino Pink",
+        "desc": "Arduino IDE default theme but Pink!",
+        "author": "pro-nav",
+        "light" : true
+    }
+}
